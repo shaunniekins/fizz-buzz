@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>FIZZ-BUZZ GAME</h1>
+    <p class="subtitle">Learn Division Through Game!</p>
+    <h2 class="randomNumText">Random Number</h2>
+    <hr>
+    <p class="randomNum">- 1 -</p>
+    <h3 class="guess">Take a guess:</h3>
+    <form class="form">
+      <div class="spacer">
+        <input type="radio" id="none" name="guess_number" value="none">
+        <label for="none">NONE</label>
+      </div>
+
+      <div class="spacer">
+        <input type="radio" id="fizz" name="guess_number" value="fizz">
+        <label for="fizz">FIZZ</label>
+      </div>
+
+      <div class="spacer">
+        <input type="radio" id="buzz" name="guess_number" value="buzz">
+        <label for="buzz">BUZZ</label>
+      </div>
+
+      <div class="spacer">
+        <input type="radio" id="fizzbuzz" name="guess_number" value="fizzbuzz">
+        <label for="fizzbuzz">FIZZBUZZ</label>
+      </div>
+    </form>
+    
+    <button id="checkAnswer" onclick="randomNumDivisibility()">Check</button>
+    <button id="reset" onclick="resetBtn()">Play again</button>
+    
+    <p id="output">- - -</p>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
